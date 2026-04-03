@@ -16,16 +16,16 @@
               <ul class="menu-content">
                 <li class="active"><a href="dashboard-ecommerce.html" class="menu-item">eCommerce</a>
                 </li>
-                <li><a href="dashboard-analytics.html" class="menu-item">Analytics</a>
+                <li><a href="{{ route('home') }}" class="menu-item">Home</a>
                 </li>
               </ul>
             </li>
             <li class="has-sub nav-item"><a href="#"><i class="icon-screen-desktop"></i><span data-i18n=""
-                  class="menu-title">Apps</span></a>
+                  class="menu-title">Categories</span></a>
               <ul class="menu-content">
-                <li><a href="chat.html" class="menu-item">Chat</a>
+                <li><a href="{{ route('categories.list') }}" class="menu-item">List Categories</a>
                 </li>
-                <li><a href="taskboard.html" class="menu-item">Taskboard</a>
+                <li><a href="{{ route('categories.create') }}" class="menu-item">Create Category</a>
                 </li>
                 <li><a href="calendar.html" class="menu-item">Calendar</a>
                 </li>
