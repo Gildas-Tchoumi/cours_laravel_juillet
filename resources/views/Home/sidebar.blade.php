@@ -31,12 +31,11 @@
                 </li>
               </ul>
             </li>
-            <li class="has-sub nav-item"><a href="#"><i class="icon-magnet"></i><span data-i18n="" class="menu-title">UI
-                  Kit</span></a>
+            <li class="has-sub nav-item"><a href="#"><i class="icon-magnet"></i><span data-i18n="" class="menu-title">Products</span></a>
               <ul class="menu-content">
-                <li><a href="color-palette.html" class="menu-item">Color Palette</a>
+                <li><a href="{{ route('products.list') }}" class="menu-item">List Products</a>
                 </li>
-                <li><a href="grids.html" class="menu-item">Grid</a>
+                <li><a href="{{ route('products.create') }}" class="menu-item">Create Product</a>
                 </li>
                 <li><a href="typography.html" class="menu-item">Typography</a>
                 </li>
