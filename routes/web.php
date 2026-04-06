@@ -1,7 +1,23 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::get('/', [HomeController::class, 'master'])->name('master');
+Route::get('/home', [HomeController::class, 'home'])->name('home');
+
+
+// --- Category routes ---
+Route::get('/list-categories', [CategoryController::class, 'index'])->name('categories.list');
+Route::get('/create-category', [CategoryController::class, 'create'])->name('categories.create');
+Route::post('/store-category', [CategoryController::class, 'store'])->name('categories.store');
+
+// --- Product routes ---
+Route::get('/list-products', [ProductController::class, 'index'])->name('products.list');
+Route::get('/create-product', [ProductController::class, 'create'])->name('products.create');
+Route::post('/store-product', [ProductController::class, 'store'])->name('products.store');
