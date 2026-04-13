@@ -57,15 +57,17 @@
                 </li>
               </ul>
             </li>
-            <li class=" nav-item"><a href="cards.html"><i class="icon-layers"></i><span data-i18n=""
+            {{-- <li class=" nav-item"><a href="cards.html"><i class="icon-layers"></i><span data-i18n=""
                   class="menu-title">Cards</span></a>
-            </li>
+            </li> --}}
             <li class="has-sub nav-item"><a href="#"><i class="icon-puzzle"></i><span data-i18n=""
-                  class="menu-title">Components</span></a>
+                  class="menu-title">Users and roles</span></a>
               <ul class="menu-content">
-                <li class="has-sub"><a href="#" class="menu-item">Bootstrap</a>
+                <li class="has-sub"><a href="#" class="menu-item">Utilisateurs</a>
                   <ul class="menu-content">
-                    <li><a href="components-lists.html" class="menu-item">List</a>
+                    <li><a href="{{ route('users.list') }}" class="menu-item">List Users</a>
+                    </li>
+                    <li><a href="{{ route('users.create') }}" class="menu-item">Create User</a>
                     </li>
                     <li><a href="components-buttons.html" class="menu-item">Buttons</a>
                     </li>

@@ -3,7 +3,9 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UtilisateurController;
 use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -21,3 +23,8 @@ Route::post('/store-category', [CategoryController::class, 'store'])->name('cate
 Route::get('/list-products', [ProductController::class, 'index'])->name('products.list');
 Route::get('/create-product', [ProductController::class, 'create'])->name('products.create');
 Route::post('/store-product', [ProductController::class, 'store'])->name('products.store');
+
+// --- User routes ---
+Route::get('/list-users', [UtilisateurController::class, 'index'])->name('users.list');
+Route::get('/create-user', [UtilisateurController::class, 'create'])->name('users.create');
+Route::post('/store-user', [UtilisateurController::class, 'store'])->name('users.store');
