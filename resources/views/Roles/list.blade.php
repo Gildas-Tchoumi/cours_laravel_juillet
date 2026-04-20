@@ -5,7 +5,7 @@
         <div class="content-wrapper">
           <div class="container-fluid"><!--Statistics cards Starts-->
             <div class="row">
-                <h1>List users</h1>
+                <h1>List Roles</h1>
 <!--Basic Table Starts-->
               <section id="simple-table">
                 <div class="row">
@@ -30,21 +30,17 @@
                             <thead>
                               <tr>
                                 {{-- <th>#</th> --}}
-                                <th>First Name</th>
-                                <th>Sexe</th>
-                                <th>Email</th>
-                                <th>Roles</th>
+                                <th>Name</th>
+                                <th>Description</th>
                                 <th>Actions</th>
                               </tr>
                             </thead>
                             <tbody>
-                                @foreach ($utilisateurs as $utilisateur)
+                                @foreach ($roles as $roles)
                                 <tr>
                                     {{-- <th scope="row">1</th> --}}
-                                    <td>{{ $utilisateur->firstname }}</td>
-                                    <td>{{ $utilisateur->sexe }}</td>
-                                    <td>{{ $utilisateur->email }}</td>
-                                    <td><a href="{{ route('roles.assignview', $utilisateur->id) }}" class="btn btn-primary">Role</a></td>
+                                    <td>{{ $roles->name }}</td>
+                                    <td>{{ $roles->description }}</td>
                                     <td>
                                         <a href="#" class="btn btn-primary">Edit</a>
                                         <a href="#" class="btn btn-danger">Delete</a>
