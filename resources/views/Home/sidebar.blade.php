@@ -103,9 +103,9 @@
                     </li>
                   </ul>
                 </li>
-                <li class="has-sub"><a href="#" class="menu-item">Extra</a>
+                <li class="has-sub"><a href="#" class="menu-item">Roles</a>
                   <ul class="menu-content">
-                    <li><a href="sweet-alerts.html" class="menu-item">Sweet Alert</a>
+                    <li><a href="{{ route('roles.create') }}" class="menu-item">Create Role</a>
                     </li>
                     <li><a href="toastr.html" class="menu-item">Toastr</a>
                     </li>
