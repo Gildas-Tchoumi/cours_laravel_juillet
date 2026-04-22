@@ -1,24 +1,20 @@
-@extends('Home.master')
+@extends('Auth.auth')
 
-@section('content')
-<div class="main-content">
+@section('container')
+{{-- <div class="main-content">
         <div class="content-wrapper">
-          <div class="container-fluid"><!--Statistics cards Starts-->
-            <div class="row">
-                <h1>Create user</h1>
+          <div class="container-fluid">
+            <div class="row"> --}}
+                {{-- <h1>Create user</h1> --}}
                 <div class="col-md-6">
 									<div class="card">
-										<div class="card-header">
+										{{-- <div class="card-header">
 											<div class="card-title-wrap bar-info">
 												<h4 class="card-title" id="basic-layout-round-controls">Complaint Form
 												</h4>
 											</div>
-											<p class="mb-0">This is a variation to the default form control styling. In
-												this example all the form controls has round styling. To
-												apply round style add class
-												<code>round</code> to any form control.
-											</p>
-										</div>
+											
+										</div> --}}
 										<div class="card-body">
 											<div class="px-3">
 
@@ -81,8 +77,8 @@
 										</div>
 									</div>
 								</div>
-                </div>
+                {{-- </div>
               </div>
                 </div>
-                </div>
+                </div> --}}
 @endsection
