@@ -8,11 +8,12 @@
                             </div>
     <div class="card-body">
                                 <div class="card-block">
-                                    <form>
+                                    <form class="form-horizontal form-simple" action="{{ route('loggin') }}" method="POST" >
+                                        @csrf
                                         <div class="form-group">
                                             <div class="col-md-12">
                                                 <input type="email" class="form-control form-control-lg"
-                                                    name="inputEmail" id="inputEmail" placeholder="Email Address"
+                                                    name="email" id="email" placeholder="Email Address"
                                                     required email>
                                             </div>
                                         </div>
@@ -20,7 +21,7 @@
                                         <div class="form-group">
                                             <div class="col-md-12">
                                                 <input type="password" class="form-control form-control-lg"
-                                                    name="inputPass" id="inputPass" placeholder="Password" required>
+                                                    name="password" id="password" placeholder="Password" required>
                                             </div>
                                         </div>
 

@@ -106,7 +106,7 @@
                       class="dropdown-item py-1"><i class="ft-message-circle mr-2"></i><span>My Chat</span></a><a
                       href="javascript:;" class="dropdown-item py-1"><i
                         class="ft-settings mr-2"></i><span>Settings</span></a>
-                    <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item"><i
+                    <div class="dropdown-divider"></div><a href="{{ route('logout') }}" class="dropdown-item"><i
                         class="ft-power mr-2"></i><span>Logout</span></a>
                   </div>
                 </div>
